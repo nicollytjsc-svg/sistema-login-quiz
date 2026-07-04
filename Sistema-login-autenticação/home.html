@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix - Início</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        // TRAVA DE SEGURANÇA: Se não existir a chave de login, manda de volta para o index
+        if (!localStorage.getItem('usuarioLogado')) {
+            window.location.href = "index.html";
+        }
+    </script>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix - Início</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        // TRAVA DE SEGURANÇA: Se não existir a chave de login, manda de volta para o index
+        if (!localStorage.getItem('usuarioLogado')) {
+            window.location.href = "index.html";
+        }
+    </script>
+</head>
+<body>
+
+    <video autoplay muted loop playsinline id="video-fundo">
+        <source src="fundo-matrix.mp4" type="video/mp4">
+        Seu navegador não suporta vídeos.
+    </video>
+
+    <header class="navbar">
+        <div class="marca-container">
+            <span class="logo-nome">NICOLLY MENEZES</span>
+            <span class="logo-sub">PROGRAMADORA FULL STACK</span>
+        </div>
+        <button onclick="sair()" class="btn-sair">Sair</button>
+    </header>
+
+    <main class="container-quiz">
+        <div class="card-quiz">
+            <div id="area-pergunta">
+                <span class="contador-perguntas">Pergunta <span id="num-atual">1</span> de 3</span>
+                <h2 id="texto-pergunta">Carregando pergunta...</h2>
+
+                <div class="opcoes-container">
+                    <button class="btn-opcao" onclick="verificarResposta(0)" id="op0">Opção 1</button>
+                    <button class="btn-opcao" onclick="verificarResposta(1)" id="op1">Opção 2</button>
+                    <button class="btn-opcao" onclick="verificarResposta(2)" id="op2">Opção 3</button>
+                    <button class="btn-opcao" onclick="verificarResposta(3)" id="op3">Opção 4</button>
+                </div>
+            </div>
+
+            <div id="area-resultado" style="display: none;">
+                <h2>Fim de Jogo!</h2>
+                <p>Você acertou <span id="total-acertos">0</span> perguntas!</p>
+                <button class="btn-opcao" onclick="reiniciarQuiz()">Tentar Novamente</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="quiz.js"></script>
+    <script>
+        // Função para deslogar com segurança
+        function sair() {
+            localStorage.removeItem('usuarioLogado');
+            window.location.href = "index.html";
+        }
+    </script>
+</body>
+</html>>
+
+    <header class="navbar">
+        <div class="marca-container">
+            <span class="logo-nome">NICOLLY MENEZES</span>
+            <span class="logo-sub">PROGRAMADORA FULL STACK</span>
+        </div>
+        <button onclick="sair()" class="btn-sair">Sair</button>
+    </header>
+
+    <main class="container-quiz">
+        <div class="card-quiz">
+            <div id="area-pergunta">
+                <span class="contador-perguntas">Pergunta <span id="num-atual">1</span> de 3</span>
+                <h2 id="texto-pergunta">Carregando pergunta...</h2>
+
+                <div class="opcoes-container">
+                    <button class="btn-opcao" onclick="verificarResposta(0)" id="op0">Opção 1</button>
+                    <button class="btn-opcao" onclick="verificarResposta(1)" id="op1">Opção 2</button>
+                    <button class="btn-opcao" onclick="verificarResposta(2)" id="op2">Opção 3</button>
+                    <button class="btn-opcao" onclick="verificarResposta(3)" id="op3">Opção 4</button>
+                </div>
+            </div>
+
+            <div id="area-resultado" style="display: none;">
+                <h2>Fim de Jogo!</h2>
+                <p>Você acertou <span id="total-acertos">0</span> perguntas!</p>
+                <button class="btn-opcao" onclick="reiniciarQuiz()">Tentar Novamente</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="quiz.js"></script>
+    <script>
+        // Função para deslogar com segurança
+        function sair() {
+            localStorage.removeItem('usuarioLogado');
+            window.location.href = "index.html";
+        }
+    </script>
+</body>
+</html>

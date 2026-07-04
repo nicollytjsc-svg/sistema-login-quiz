@@ -1,0 +1,457 @@
+/* Configuração geral para a tela escura com fundo de filmes */
+.corpo-login {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://assets.nflxext.com/ffe/siteui/vlv3/f841d3c7-1241-43ef-a47b-11c330075fe3/c2466e38-e699-4f7f-9704-d33c1b0d2e45/BR-pt-20220502-popsignuptwoweeks-perspective_alpha_website_large.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Painelzinho quadrado centralizado (Estilo Netflix) */
+.card-login {
+    background-color: rgba(0, 0, 0, 0.75);
+    padding: 60px;
+    border-radius: 4px;
+    width: 380px;
+    min-height: 400px;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.5);
+    box-sizing: border-box;
+}
+
+.card-login h2 {
+    margin-top: 0;
+    margin-bottom: 28px;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+/* inputs cinzas e arredondados */
+.card-login input {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 4px;
+    background-color: #333333;
+    color: white;
+    font-size: 16px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.card-login input:focus {
+    background-color: #454545;
+    outline: none;
+}
+
+/* Botão Vermelho Netflix */
+.btn-netflix {
+    width: 100%;
+    padding: 14px;
+    background-color: #e50914;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background 0.2s;
+}
+
+.btn-netflix:hover {
+    background-color: #bf0810;
+}
+
+/* Links e textos de rodapé */
+.rodape-card {
+    margin-top: 30px;
+    font-size: 16px;
+    color: #737373;
+}
+
+.rodape-card a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.rodape-card a:hover {
+    text-decoration: underline;
+}
+/* ==========================================================
+   1. ESTILO DA TELA DE LOGIN & CADASTRO (ESTILO NETFLIX)
+   ========================================================== */
+
+/* Fundo escuro com imagem de filmes para o Login/Cadastro */
+.corpo-login {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://assets.nflxext.com/ffe/siteui/vlv3/f841d3c7-1241-43ef-a47b-11c330075fe3/c2466e38-e699-4f7f-9704-d33c1b0d2e45/BR-pt-20220502-popsignuptwoweeks-perspective_alpha_website_large.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Painelzinho quadrado uniforme e simétrico */
+.card-login {
+    background-color: rgba(0, 0, 0, 0.75);
+    padding: 60px;
+    border-radius: 8px;
+    width: 380px;
+    min-height: 400px;
+    box-shadow: 0px 8px 24px rgba(0,0,0,0.8);
+    box-sizing: border-box;
+}
+
+.card-login h2 {
+    margin-top: 0;
+    margin-bottom: 28px;
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+.card-login input {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 4px;
+    background-color: #333333;
+    color: white;
+    font-size: 16px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.card-login input:focus {
+    background-color: #454545;
+    outline: none;
+}
+
+.btn-netflix {
+    width: 100%;
+    padding: 14px;
+    background-color: #2c8a08;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background 0.2s ease;
+}
+
+.btn-netflix:hover {
+    background-color: #08bf4e;
+}
+
+.rodape-card {
+    margin-top: 30px;
+    font-size: 15px;
+    color: #737373;
+}
+
+.rodape-card a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.rodape-card a:hover {
+    text-decoration: underline;
+}
+
+
+/* ==========================================================
+   2. ESTILO DA HOME (TELA DO QUIZ DE PROGRAMAÇÃO)
+   ========================================================== */
+
+/* Barra de Navegação Superior */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(210, 235, 225, 0.95);
+    backdrop-filter: blur(5px);
+    padding: 15px 50px;
+    border-bottom: 1px solid #222;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 1000;
+}
+
+.marca-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-nome {
+    font-size: 24px;
+    font-weight: 900;
+    color: #22a009;
+    letter-spacing: 0.5px;
+}
+
+.logo-sub {
+    font-size: 10px;
+    color: #00ff66; /* Verde tecnológico pro subtexto */
+    letter-spacing: 2px;
+    font-weight: bold;
+    margin-top: 2px;
+}
+
+/* Botão SAIR Vermelho com efeito de pequeno ZOOM ao passar o mouse */
+.btn-sair {
+    background-color: #0fc518;
+    color: #ffffff;
+    border: none;
+    padding: 8px 20px;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), background-color 0.2s ease;
+}
+
+.btn-sair:hover {
+    background-color: #49dd43;
+    transform: scale(1.08); /* Efeito de pequeno Zoom sutil */
+}
+/* ==========================================================
+   2. ESTILO DA HOME (TELA DO QUIZ DE PROGRAMAÇÃO)
+   ========================================================== */
+
+/* Remove qualquer imagem, cor de fundo residual ou barras brancas da página */
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0b0c10 !important; /* Fundo base preto */
+    background-image: none !important; /* Remove totalmente a foto antiga dos dados! */
+    overflow-x: hidden; /* Evita barras de rolagem para os lados */
+}
+
+/* Configuração definitiva para o Vídeo Matrix ocupar 100% do fundo como papel de parede */
+#video-fundo {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100vw !important;
+    height: 100vh !important;
+    object-fit: cover !important; /* Faz o vídeo cobrir a tela cheia sem distorcer */
+    z-index: -1000 !important; /* Joga o vídeo para trás de absolutamente tudo */
+    filter: brightness(35%); /* Deixa o Matrix escurinho para o Quiz destacar */
+    pointer-events: none; /* Garante que você consiga clicar nos botões do quiz por cima do vídeo */
+}
+
+/* Barra de Navegação Superior (Fixa no topo) */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(11, 12, 16, 0.95);
+    backdrop-filter: blur(5px);
+    padding: 15px 50px;
+    border-bottom: 1px solid #222;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 1000;
+}
+
+.marca-container {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Seu nome em VERDE NEON tecnológico */
+.logo-nome {
+    font-size: 24px;
+    font-weight: 900;
+    color: #00ff66; 
+    letter-spacing: 0.5px;
+}
+
+.logo-sub {
+    font-size: 10px;
+    color: #ffffff; 
+    letter-spacing: 2px;
+    font-weight: bold;
+    margin-top: 2px;
+}
+
+/* Botão SAIR em VERDE NEON com texto escuro e efeito de ZOOM */
+.btn-sair {
+    background-color: #00ff66;
+    color: #0b0c10; 
+    border: none;
+    padding: 8px 20px;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), background-color 0.2s ease;
+}
+
+.btn-sair:hover {
+    background-color: #00cc52; 
+    transform: scale(1.08); 
+}
+
+/* Container Principal do Quiz (Totalmente transparente para o vídeo aparecer ao fundo) */
+.container-quiz {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: transparent !important; /* Remove qualquer fundo sólido do meio */
+    padding-top: 90px; 
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Card Central Uniforme e Simétrico */
+.card-quiz {
+    background-color: rgba(24, 63, 19, 0.93);
+    border: 1px solid #00ff66; 
+    padding: 40px;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+    box-shadow: 0 15px 35px rgba(0, 255, 102, 0.15); 
+    box-sizing: border-box;
+}
+
+.contador-perguntas {
+    font-size: 13px;
+    color: #00ff66; 
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: block;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.card-quiz h2 {
+    font-size: 26px;
+    color: #ffffff;
+    margin-bottom: 35px;
+    line-height: 1.5;
+    font-weight: 600;
+}
+
+.opcoes-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.btn-opcao {
+    background-color: #24252a;
+    color: #e0e0e0;
+    border: 1px solid #444;
+    padding: 16px 24px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: left;
+    transition: all 0.2s ease;
+    width: 100%;
+    box-sizing: border-box;
+    font-weight: 500;
+}
+
+.btn-opcao:hover:not(:disabled) {
+    background-color: #2f3037;
+    border-color: #00ff66; 
+    color: #ffffff;
+    transform: translateX(4px); 
+}
+
+.btn-opcao:disabled {
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+/* Card Central Uniforme, Limpo e Moderno */
+.card-quiz {
+    background-color: rgba(26, 26, 29, 0.95);
+    border: 1px solid #00ff66; /* Detalhe em verde neon de programação nas bordas */
+    padding: 40px;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+    box-shadow: 0 15px 35px rgba(0, 255, 102, 0.1); /* Brilho tecnológico sutil */
+    box-sizing: border-box;
+}
+
+.contador-perguntas {
+    font-size: 13px;
+    color: #00ff66; /* Verde Neon */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: block;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.card-quiz h2 {
+    font-size: 26px;
+    color: #ffffff;
+    margin-bottom: 35px;
+    line-height: 1.5;
+    font-weight: 600;
+}
+
+/* Opções organizadas em lista vertical perfeitamente distribuída */
+.opcoes-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Botões das alternativas do Quiz - Design Tecnológico */
+.btn-opcao {
+    background-color: #24252a;
+    color: #e0e0e0;
+    border: 1px solid #444;
+    padding: 16px 24px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: left;
+    transition: all 0.2s ease;
+    width: 100%;
+    box-sizing: border-box;
+    font-weight: 500;
+}
+
+/* Efeito ao passar o mouse nas alternativas */
+.btn-opcao:hover:not(:disabled) {
+    background-color: #0f3819;
+    border-color: #00ff66; /* Borda acende em verde */
+    color: #ffffff;
+    transform: translateX(4px); /* Deslocamento sutil para o lado */
+}
+
+.btn-opcao:disabled {
+    cursor: not-allowed;
+    opacity: 0.7;
+}
